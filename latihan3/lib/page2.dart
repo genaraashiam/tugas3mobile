@@ -5,10 +5,19 @@ class page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          Container(
+    return MaterialApp(
+      home: Scaffold(
+      appBar: AppBar(
+      title: Text(''),
+      ),
+        body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
             width: 100,
             height: 100,
             color: Color.fromARGB(255, 233, 16, 8),
@@ -16,20 +25,32 @@ class page2 extends StatelessWidget {
           Container(
             width: 100,
             height: 100,
-            color: Color.fromARGB(255, 89, 141, 46),
+            color: Color.fromARGB(255, 115, 255, 1),
           ),
-          Container(
+          ],
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+            Container(
             width: 100,
             height: 100,
-            color: Color.fromARGB(255, 0, 147, 245),
+            color: Color.fromARGB(255, 7, 153, 250),
           ),
                     Container(
             width: 100,
             height: 100,
-            color: Color.fromARGB(255, 255, 208, 0),
+            color: Color.fromARGB(255, 248, 252, 6),
           ),
-        ] 
+          ],)
+      
+    
+              ],
+            )
+          
+        ),
       )
-    );
+      )
+    ;
   }
 }
